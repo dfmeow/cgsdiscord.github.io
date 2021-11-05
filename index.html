@@ -38,7 +38,16 @@
 				color: #FFFFFF;
 				font-family: 'Open Sans', sans-serif;
 			}
+
 			.widget{
+				border-radius: 8px;
+			}
+
+			#url-target{
+				border-radius: 8px;
+			}
+
+			button{
 				border-radius: 8px;
 			}
 		</style>
@@ -57,8 +66,8 @@
                 function go() {
                     var input = document.getElementById('url-target');
                     	if (input.value) {
-                        	window.open('/main/' + input.value);
-                    	} 
+                        	window.open('https://cgsproxy.herokuapp.com/main/' + input.value);
+                    	}
 			else {
                         	alert('Please provide a link. It does not require https://.');
                     	}
@@ -70,9 +79,9 @@
                 	<button onclick='go()' class="w3-xlarge">Go!</button>
             		</div>
             	</div>
-		
-		
-		
+
+
+
 
 <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
     new Crate({
