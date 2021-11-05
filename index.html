@@ -51,8 +51,30 @@
 		</a>
 		<!-- <iframe src="https://discord.com/widget?id=826023027548225547&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 		-->
+		<h1>CGS Proxy</h1>
+		<div>
+            	<script>
+                function go() {
+                    var input = document.getElementById('url-target');
+                    	if (input.value) {
+                        	window.open('/main/' + input.value);
+                    	} 
+			else {
+                        	alert('Please provide a link. It does not require https://.');
+                    	}
+                }
+            	</script>
+            	<span class="w3-xlarge">Input your URL here: </span>
+            	<div>
+                	<input class="w3-xlarge" type='text' placeholder='https://www.google.com' id='url-target' onkeydown='if(event.key==="Enter") go()' />
+                	<button onclick='go()' class="w3-xlarge">Go!</button>
+            		</div>
+            	</div>
+		
+		
+		
 
-		<script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+<script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
     new Crate({
         server: '826023027548225547', // CGS
         channel: '903174014120386580' // #unverified-chat｜💬
