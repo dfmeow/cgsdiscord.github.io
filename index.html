@@ -107,18 +107,20 @@
 		<div class="container">
             	<script>
                 function go() {
-                    var input = document.getElementById('url-target');
+                    var input = document.getElementById('search-target');
                     	if (input.value) {
-                        	window.open('https://cgsproxy.herokuapp.com/main/' + input.value);
-                    	}
-			else {
-                        	alert('Please provide a link. It does not require https://.');
+												let stringUrl = "http://www.google.com/search";
+												let url = new URL(stringUrl);
+												let params = url.searchParams;
+												params.append("q", input.value);
+												console.log(url.toString());
+                        window.open('https://cgsproxy.herokuapp.com/main/' + url.toString());
                     	}
                 }
             	</script>
-            	<span class="w3-xlarge">Input your URL here: </span>
+            	<span class="w3-xlarge">Search with Google: </span>
             	<div>
-                	<input class="w3-xlarge" type='text' placeholder='https://www.google.com' id='url-target' onkeydown='if(event.key==="Enter") go()' />
+                	<input class="w3-xlarge" type='text' placeholder='Define stonks' id='search-target' onkeydown='if(event.key==="Enter") go()' />
                 	<button onclick='go()' class="w3-xlarge">Go!</button>
             	</div>
     </div>
