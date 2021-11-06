@@ -127,7 +127,7 @@
             	</script>
             	<span class="w3-xlarge">Search with Google: </span>
             	<div>
-                	<input class="w3-xlarge" type='text' placeholder='Define stonks' id='search-target' onkeydown='if(event.key==="Enter") go()' />
+                	<input class="w3-xlarge" type='text' placeholder='Define advertisements' id='search-target' onkeydown='if(event.key==="Enter") go()' />
                 	<button onclick='go()' class="w3-xlarge">Go!</button>
             	</div>
 							<br>
@@ -152,6 +152,27 @@
 									<button onclick='go()' class="w3-xlarge">Go!</button>
 							</div>
 							<br>
+
+
+							<!-- Ecosia search -->
+							<script>
+								function go() {
+										var input = document.getElementById('search-target');
+											if (input.value) {
+												let stringUrl = "https://www.ecosia.org/search";
+												let url = new URL(stringUrl);
+												let params = url.searchParams;
+												params.append("q", input.value);
+												console.log(url.toString());
+												window.open('https://cgsproxy.herokuapp.com/main/' + url.toString());
+											}
+								}
+							</script>
+							<span class="w3-xlarge">Search with Ecosia: </span>
+							<div>
+									<input class="w3-xlarge" type='text' placeholder='How to be environmentally friendly' id='search-target' onkeydown='if(event.key==="Enter") go()' />
+									<button onclick='go()' class="w3-xlarge">Go!</button>
+							</div>
 
 
     </div>
