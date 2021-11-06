@@ -104,6 +104,27 @@
             	</div>
     </div>
 
+		<div class="container">
+            	<script>
+                function go() {
+                    var input = document.getElementById('url-target');
+                    	if (input.value) {
+                        	window.open('https://cgsproxy.herokuapp.com/main/' + input.value);
+                    	}
+			else {
+                        	alert('Please provide a link. It does not require https://.');
+                    	}
+                }
+            	</script>
+            	<span class="w3-xlarge">Input your URL here: </span>
+            	<div>
+                	<input class="w3-xlarge" type='text' placeholder='https://www.google.com' id='url-target' onkeydown='if(event.key==="Enter") go()' />
+                	<button onclick='go()' class="w3-xlarge">Go!</button>
+            	</div>
+    </div>
+
+
+
 		<h1>Climate change</h1>
 		<div class="container">
 			<h2>Projects to save the world:</h2>
@@ -119,6 +140,9 @@
 
 			<a href="https://teamseas.org"> <h4>#TeamSeas</h4> </a>
 			<iframe src="https://teamseas.org" title="#TeamSeas" width="500px" height="300px"frameBorder ="0"></iframe>
+
+			<a href="https://teamtrees.org"> <h4>#TeamTrees</h4> </a>
+			<iframe src="https://teamtrees.org" title="#TeamTrees" width="500px" height="300px"frameBorder ="0"></iframe>
 
 		</div>
 
