@@ -137,14 +137,14 @@
 						</script>
 						<span class="w3-xlarge">Search with Google: </span>
 						<div>
-								<input class="w3-xlarge" type='text' placeholder='Define advertisements' id='google' onkeydown='if(event.key==="Enter") go()' />
+								<input class="w3-xlarge" type='text' placeholder='Define advertisements' id='google' onkeydown='if(event.key==="Enter") goGoogle()' />
 								<button onclick='goGoogle()' class="w3-xlarge">Go!</button>
 						</div>
 						<br>
 
 						<!-- DuckDuckGo search -->
 						<script>
-							function go() {
+							function goDuck() {
 									var input = document.getElementById('duckduckgo');
 										if (input.value) {
 											let stringUrl = "https://duckduckgo.com/";
@@ -159,15 +159,15 @@
 
 						<span class="w3-xlarge">Search with DuckDuckGo: </span>
 						<div>
-								<input class="w3-xlarge" type='text' placeholder='Define stonks' id='duckduckgo' onkeydown='if(event.key==="Enter") go()' />
-								<button onclick='go()' class="w3-xlarge">Go!</button>
+								<input class="w3-xlarge" type='text' placeholder='Define stonks' id='duckduckgo' onkeydown='if(event.key==="Enter") goDuck()' />
+								<button onclick='goDuck()' class="w3-xlarge">Go!</button>
 						</div>
 						<br>
 
 
 						<!-- Ecosia search -->
 						<script>
-							function go() {
+							function goEco() {
 									var input = document.getElementById('ecosia');
 										if (input.value) {
 											let stringUrl = "https://www.ecosia.org/search";
@@ -181,8 +181,8 @@
 						</script>
 						<span class="w3-xlarge">Search with Ecosia: </span>
 						<div>
-								<input class="w3-xlarge" type='text' placeholder='How to be environmentally friendly' id='ecosia' onkeydown='if(event.key==="Enter") go()' />
-								<button onclick='go()' class="w3-xlarge">Go!</button>
+								<input class="w3-xlarge" type='text' placeholder='How to be environmentally friendly' id='ecosia' onkeydown='if(event.key==="Enter") goEco()' />
+								<button onclick='goEco()' class="w3-xlarge">Go!</button>
 						</div>
 
 
