@@ -164,29 +164,6 @@
 						</div>
 						<br>
 
-
-						<!-- Ecosia search -->
-						<script>
-							function goEco() {
-									var input = document.getElementById('ecosia');
-										if (input.value) {
-											let stringUrl = "https://www.ecosia.org/search";
-											let url = new URL(stringUrl);
-											let params = url.searchParams;
-											params.append("q", input.value);
-											console.log(url.toString());
-											window.open('https://cgsproxy.herokuapp.com/main/' + url.toString());
-										}
-							}
-						</script>
-						<span class="w3-xlarge">Search with Ecosia: </span>
-						<p><em>Note: Sometimes Ecosia doesn't work with the proxy</em></p>
-						<div>
-								<input class="w3-xlarge" type='text' placeholder='How to be environmentally friendly' id='ecosia' onkeydown='if(event.key==="Enter") goEco()' />
-								<button onclick='goEco()' class="w3-xlarge">Go!</button>
-						</div>
-						<br>
-
 						<!-- Quick links -->
 						<script>
 						function discord() {
