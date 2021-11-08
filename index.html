@@ -103,6 +103,11 @@
               function go() {
               	var input = document.getElementById('url-target');
                 	if (input.value) {
+										var wnd = window.open("https://cgsproxy.herokuapp.com");
+    								setTimeout(function() {
+      								wnd.close();
+    								}, 5000);
+    								return false;
                   	window.open('https://cgsproxy.herokuapp.com/main/' + input.value);
                   }
 									else {
