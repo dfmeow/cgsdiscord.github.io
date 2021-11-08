@@ -138,8 +138,9 @@
 									params.append("q", input.value);
 									console.log(url.toString());
 
-									var wnd = window.open('https://cgsproxy.herokuapp.com/main/' + url.toString());
-									window.open('https://cgsproxy.herokuapp.com/main/' + input.value);
+									var wnd = window.open("https://cgsproxy.herokuapp.com");
+									window.open('https://cgsproxy.herokuapp.com/main/' + url.toString());
+
 									setTimeout(function() {
 										wnd.close();
 									}, 1000);
@@ -168,8 +169,9 @@
 											params.append("q", input.value);
 											console.log(url.toString());
 
-											var wnd = window.open('https://cgsproxy.herokuapp.com/main/' + url.toString());
-											window.open('https://cgsproxy.herokuapp.com/main/' + input.value);
+											var wnd = window.open("https://cgsproxy.herokuapp.com");
+											window.open('https://cgsproxy.herokuapp.com/main/' + url.toString());
+
     									setTimeout(function() {
       									wnd.close();
     									}, 1000);
@@ -190,10 +192,11 @@
 						<!-- Quick links -->
 						<script>
 						function discord() {
-							var wnd = window.open('https://cgsproxy.herokuapp.com/main/https://discord.com/app');
-							window.open('https://cgsproxy.herokuapp.com/main/' + input.value);
+							var wnd = window.open("https://cgsproxy.herokuapp.com");
+							window.open('https://cgsproxy.herokuapp.com/main/https://discord.com/app');
+
     					setTimeout(function() {
-							wnd.close();
+								wnd.close();
     					}, 1000);
 
     					return false;
@@ -203,10 +206,10 @@
 
 						<script>
 						function minehut() {
-							var wnd = window.open('https://cgsproxy.herokuapp.com/main/https://minecraftservers.org/vote/443456');
-							window.open('https://cgsproxy.herokuapp.com/main/' + input.value);
+							var wnd = window.open("https://cgsproxy.herokuapp.com");
+							window.open('https://cgsproxy.herokuapp.com/main/https://minecraftservers.org/vote/443456');
     					setTimeout(function() {
-							wnd.close();
+								wnd.close();
     					}, 1000);
 
     					return false;
