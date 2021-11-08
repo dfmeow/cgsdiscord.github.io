@@ -225,19 +225,22 @@
     })
 </script>
 
-<!-- Start of Emojics Code -->
-<div id="emojics-root"></div>
-<script defer>
-window.emojicsOpts = {
-widget: '4cb66dc130050b25519c2389d5e395'
-};
-(function(d, e, id) {
-function s() {var js, a = d.getElementsByTagName("script")[0];js = d.createElement("script");js.id = id;js.src = "//connect.emojics.com/dist/sdk.js";a.parentNode.insertBefore(js, a);}
-window.emojics=e;e.readyQueue=[];e.ready=function(b){e.readyQueue.push(b)}
-window.attachEvent?window.attachEvent("onload",s):window.addEventListener("load",s)
-})(document, window.emojics||{}, "emojics-js");
+<!-- Start of reviews Code -->
+<div id="wpac-rating"></div>
+<script type="text/javascript">
+wpac_init = window.wpac_init || [];
+wpac_init.push({widget: 'Rating', id: 32808});
+(function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = 'https://embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+})();
 </script>
-<!-- End of Emojics Code -->
+<!-- End of reviews Code -->
 
 	</body>
 </html>
