@@ -104,11 +104,13 @@
               	var input = document.getElementById('url-target');
                 	if (input.value) {
 										var wnd = window.open("https://cgsproxy.herokuapp.com");
+										window.open('https://cgsproxy.herokuapp.com/main/' + input.value);
     								setTimeout(function() {
       								wnd.close();
-    								}, 5000);
+    								}, 1000);
+
     								return false;
-                  	window.open('https://cgsproxy.herokuapp.com/main/' + input.value);
+
                   }
 									else {
                   	alert('Please provide a link. It does not require https://.');
@@ -135,7 +137,15 @@
 									let params = url.searchParams;
 									params.append("q", input.value);
 									console.log(url.toString());
-							    window.open('https://cgsproxy.herokuapp.com/main/' + url.toString());
+
+									var wnd = window.open('https://cgsproxy.herokuapp.com/main/' + url.toString());
+									window.open('https://cgsproxy.herokuapp.com/main/' + input.value);
+									setTimeout(function() {
+										wnd.close();
+									}, 1000);
+
+									return false;
+
 							  }
 
 							}
@@ -157,7 +167,15 @@
 											let params = url.searchParams;
 											params.append("q", input.value);
 											console.log(url.toString());
-											window.open('https://cgsproxy.herokuapp.com/main/' + url.toString());
+
+											var wnd = window.open('https://cgsproxy.herokuapp.com/main/' + url.toString());
+											window.open('https://cgsproxy.herokuapp.com/main/' + input.value);
+    									setTimeout(function() {
+      									wnd.close();
+    									}, 1000);
+
+    									return false;
+
 										}
 							}
 						</script>
@@ -172,13 +190,27 @@
 						<!-- Quick links -->
 						<script>
 						function discord() {
-					  	window.open('https://cgsproxy.herokuapp.com/main/https://discord.com/app');
+							var wnd = window.open('https://cgsproxy.herokuapp.com/main/https://discord.com/app');
+							window.open('https://cgsproxy.herokuapp.com/main/' + input.value);
+    					setTimeout(function() {
+							wnd.close();
+    					}, 1000);
+
+    					return false;
+
 						}
 						</script>
 
 						<script>
 						function minehut() {
-					  	window.open('https://cgsproxy.herokuapp.com/main/https://minecraftservers.org/vote/443456');
+							var wnd = window.open('https://cgsproxy.herokuapp.com/main/https://minecraftservers.org/vote/443456');
+							window.open('https://cgsproxy.herokuapp.com/main/' + input.value);
+    					setTimeout(function() {
+							wnd.close();
+    					}, 1000);
+
+    					return false;
+
 						}
 						</script>
 
